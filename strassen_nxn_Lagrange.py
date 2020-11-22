@@ -8,8 +8,9 @@ import matplotlib.pyplot as plt
 # Wa, Wb are p x n^2 matrices. 
 # Wc is a n^2 x p matrix. 
 # p is the number of products to use in the searched for algorithm.
-# *. is the element-wise product.
-# a = vec(A) is the n^2 long vector created by unrolling A. 
+# *. is the element-wise product. The searched for algorithms has
+# p such products. 
+# a = vec(A) is the n^2-long vector created by unrolling A. 
 # A = mat(a) is the the matrix created from the vector a = vec(A).
 def lagrangeSolver(n, p, numIters):
     nn=n**2
