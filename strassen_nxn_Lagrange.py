@@ -80,8 +80,8 @@ def lagrangeSolver(n, p, numIters):
             numItersInTol=numItersInTol+1
             if numItersInTol>1000:
                 break
-            else:
-                numItersInTol=0
+        else:
+            numItersInTol=0
 
     return Wa,Wb,Wc,errHist,i #lagrangeSolver
 
