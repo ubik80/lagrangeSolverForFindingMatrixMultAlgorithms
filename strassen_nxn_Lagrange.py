@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 # finds Wa, Wb, Wc, so that Wc*(Wa*vec(A) *. Wb*vec(B)) = vec(A*B)
 # => A*B = mat(Wc*(Wa*vec(A) *. Wb*vec(B)))
 # A, B are n x n matrices (to be multiplied). 
-# Wa, Wb are n^2 x p matrices. 
-# Wc is a p x n^2 matrix. 
+# Wa, Wb are p x n^2 matrices. 
+# Wc is a n^2 x p matrix. 
 # p is the number of products to use in the searched for algorithm.
 # *. is the element-wise product.
 # a = vec(A) is the n^2 long vector created by unrolling A. 
