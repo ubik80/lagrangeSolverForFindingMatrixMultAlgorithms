@@ -2,7 +2,15 @@ import numpy as np
 np.set_printoptions(precision=4, suppress=True)
 import matplotlib.pyplot as plt
 
-# finds Wa, Wb, Wc, so that Wc*(Wa*a *. Wb*b) = A*B
+# finds Wa, Wb, Wc, so that Wc*(Wa*vec(A) *. Wb*vec(B)) = vec(A*B)
+# => A*B = mat(Wc*(Wa*vec(A) *. Wb*vec(B)))
+# A, B are n x n matrices (to be multiplied). 
+# Wa, Wb are n^2 x p matrices. 
+# Wc is a p x n^2 matrix. 
+# p is the number of products to use in the searched for algorithm.
+# *. is the element-wise product.
+# a = vec(A) is the n^2 long vector created by unrolling A. 
+# A = mat(a) is the the matrix created from the vector a = vec(A).
 def lagrangeSolver(n, p, numIters):
     nn=n**2
 
