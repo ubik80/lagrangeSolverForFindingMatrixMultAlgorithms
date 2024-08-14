@@ -2,6 +2,7 @@ import numpy as np
 np.set_printoptions(precision=4, suppress=True)
 import matplotlib.pyplot as plt
 
+
 # finds Wa, Wb, Wc, so that Wc*(Wa*vec(A) *. Wb*vec(B)) = vec(A*B)
 # => A*B = mat(Wc*(Wa*vec(A) *. Wb*vec(B)))
 # A, B are n x n matrices (to be multiplied). 
@@ -85,6 +86,7 @@ def lagrangeSolver(n, p, numIters):
             numItersInTol=0
 
     return Wa,Wb,Wc,errHist,i #lagrangeSolver
+
 
 n=3
 p=23
