@@ -13,3 +13,7 @@ https://github.com/ubik80/searching-for-fast-MM-algorithms and
 
 https://www.researchgate.net/publication/341942316_Searching_for_fast_matrix_multiplication_algorithms
 
+To find float solutions using the backpropagation algorithm and Cuda, have a look at:
+
+https://github.com/ubik80/findingFloatMatrixMultiplicationAlgorithmsCUDA
+
